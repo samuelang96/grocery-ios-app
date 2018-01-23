@@ -1,0 +1,18 @@
+platform :ios, '10.0'
+
+target 'heb-ios-app' do
+  use_frameworks!
+pod 'Alamofire'
+
+  # Pods for heb-ios-app
+  target 'heb-ios-appTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'heb-ios-appUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
