@@ -14,9 +14,12 @@
 		7A921C8B1CD2858B00E7B04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A921C8A1CD2858B00E7B04B /* Assets.xcassets */; };
 		7A921C8E1CD2858B00E7B04B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A921C8C1CD2858B00E7B04B /* LaunchScreen.storyboard */; };
 		7A921C961CD2861000E7B04B /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A921C951CD2861000E7B04B /* PreviewView.swift */; };
+<<<<<<< HEAD
 		C2B507BC203263630041888E /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B507BB203263630041888E /* ShoppingListTableViewCell.swift */; };
 		C2B507BE203265BC0041888E /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B507BD203265BC0041888E /* ShoppingListTableViewController.swift */; };
 		C2B507C02032668F0041888E /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B507BF2032668F0041888E /* ShoppingList.swift */; };
+=======
+>>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +35,12 @@
 		7A921C8F1CD2858B00E7B04B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A921C951CD2861000E7B04B /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		88AFC1D2611E576DFE465935 /* SampleCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C2B507BB203263630041888E /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
 		C2B507BD203265BC0041888E /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		C2B507BF2032668F0041888E /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +81,12 @@
 				7A921C851CD2858B00E7B04B /* CameraViewController.swift */,
 				7A5BA9711CD2B5EE0091A264 /* ItemSelectionViewController.swift */,
 				7A921C871CD2858B00E7B04B /* Main.storyboard */,
+<<<<<<< HEAD
 				C2B507BB203263630041888E /* ShoppingListTableViewCell.swift */,
 				C2B507BD203265BC0041888E /* ShoppingListTableViewController.swift */,
 				C2B507BF2032668F0041888E /* ShoppingList.swift */,
+=======
+>>>>>>> origin/master
 				7A921C8A1CD2858B00E7B04B /* Assets.xcassets */,
 				7A921C8C1CD2858B00E7B04B /* LaunchScreen.storyboard */,
 				7A921C8F1CD2858B00E7B04B /* Info.plist */,
@@ -175,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				C2B507BC203263630041888E /* ShoppingListTableViewCell.swift in Sources */,
 				7A5BA9721CD2B5EE0091A264 /* ItemSelectionViewController.swift in Sources */,
 				C2B507C02032668F0041888E /* ShoppingList.swift in Sources */,
@@ -182,6 +192,12 @@
 				7A921C841CD2858B00E7B04B /* AppDelegate.swift in Sources */,
 				7A921C961CD2861000E7B04B /* PreviewView.swift in Sources */,
 				C2B507BE203265BC0041888E /* ShoppingListTableViewController.swift in Sources */,
+=======
+				7A5BA9721CD2B5EE0091A264 /* ItemSelectionViewController.swift in Sources */,
+				7A921C861CD2858B00E7B04B /* CameraViewController.swift in Sources */,
+				7A921C841CD2858B00E7B04B /* AppDelegate.swift in Sources */,
+				7A921C961CD2861000E7B04B /* PreviewView.swift in Sources */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
