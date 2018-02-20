@@ -211,37 +211,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QK-aS-pQA">
-                                <rect key="frame" x="33" y="43" width="347" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="PING SERVER">
-                                    <color key="titleColor" red="0.86666666670000003" green="0.1450980392" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-S7-AT2">
-                                <rect key="frame" x="33" y="291" width="347" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99373614200000004" blue="0.97955672650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="GET SAMPLE PRODUCT">
-                                    <color key="titleColor" red="0.79724621770000004" green="0.22748768329999999" blue="0.15578654410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="getSampleProduct:" destination="YHQ-WQ-5U5" eventType="touchUpInside" id="W1Q-J0-tw2"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NDj-w6-VYM">
-                                <rect key="frame" x="33" y="126" width="347" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70434027779999997" green="0.1450980392" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.78100479690000002" green="1" blue="0.87777723159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L1R-hV-9c6">
-                                <rect key="frame" x="33" y="381" width="347" height="157"/>
+                                <rect key="frame" x="33" y="259" width="347" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70434027779999997" green="0.1450980392" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.78100479690000002" green="1" blue="0.87777723159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -259,17 +230,37 @@
                                     <segue destination="pYE-xa-CpI" kind="show" id="Viq-Lo-aVK"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAV-9e-7dP">
+                                <rect key="frame" x="33" y="209" width="347" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-S7-AT2">
+                                <rect key="frame" x="34" y="133" width="347" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.99373614200000004" blue="0.97955672650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="GET PRODUCT WITH BARCODE">
+                                    <color key="titleColor" red="0.79724621770000004" green="0.22748768329999999" blue="0.15578654410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="getSampleProduct:" destination="YHQ-WQ-5U5" eventType="touchUpInside" id="W1Q-J0-tw2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.86666666670000003" green="0.1450980392" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="YdU-R8-1Cf"/>
                     </view>
                     <connections>
+                        <outlet property="barcodeTextField" destination="hAV-9e-7dP" id="7dB-X1-h0a"/>
                         <outlet property="demoTextView" destination="L1R-hV-9c6" id="YuW-Ac-F45"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EuL-pw-WhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801" y="-573"/>
+            <point key="canvasLocation" x="800.00000000000011" y="-573.09782608695662"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="k9J-EK-Xnb">
