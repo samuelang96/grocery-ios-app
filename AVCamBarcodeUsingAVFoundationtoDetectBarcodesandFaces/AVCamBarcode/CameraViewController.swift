@@ -11,6 +11,14 @@ import SafariServices
 
 class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate, ItemSelectionViewControllerDelegate {
     // MARK: View Controller Life Cycle
+    var switchEnabled = true
+    
+    @IBAction func scanBarcodeButton(_ sender: Any) {
+        switchEnabled = true;
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -615,13 +623,11 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             let textLayerString: String?
             if let stringValue = barcodeMetadataObject.stringValue, !stringValue.characters.isEmpty {
                 textLayerString = stringValue
-                if(stringValue.count >= 10){
+                if(stringValue.count >= 10 && switchEnabled){
+                    switchEnabled = false
                     let dv = DemoViewController()
-        
                     dv.testBarcodeRequest(barcode: stringValue)
-                
                     performSegue(withIdentifier: "demo", sender: nil)
-
                     print(stringValue)
                 }else{
                     print("string value too short!")
