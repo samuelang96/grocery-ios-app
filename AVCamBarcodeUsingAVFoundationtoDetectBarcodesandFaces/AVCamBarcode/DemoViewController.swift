@@ -18,6 +18,12 @@ class DemoViewController: UIViewController {
         //0070847012474
         testBarcodeRequest(barcode: self.barcodeTextField.text!);
     }
+    
+    func writeSampleText(sampleText: String){
+        demoTextView.text = sampleText
+        print("wowee")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

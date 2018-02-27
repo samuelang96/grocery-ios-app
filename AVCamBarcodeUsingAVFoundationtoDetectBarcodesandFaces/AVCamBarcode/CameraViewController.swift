@@ -3,6 +3,10 @@
  
  Abstract:
  View controller for camera interface.
+ 
+ CSI 205
+ keeps freezing,
+ Paula hertel.
  */
 
 import UIKit
@@ -13,12 +17,22 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     // MARK: View Controller Life Cycle
     var switchEnabled = true
     
-    @IBAction func scanBarcodeButton(_ sender: Any) {
-        switchEnabled = true;
+
+    @IBAction func writeDemoText(_ sender: Any) {
+
+        //let dv = DemoViewController()
+        //dv.demoTextView.text = "wowee"
+
+       // performSegue(withIdentifier: "demo", sender: nil)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "demo") as! DemoViewController
+        
+        self.present(controller, animated: true, completion: nil)
+        controller.writeSampleText(sampleText: "wowee")
+
+        
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -628,10 +642,8 @@ class CameraViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                     let dv = DemoViewController()
                     dv.testBarcodeRequest(barcode: stringValue)
                     performSegue(withIdentifier: "demo", sender: nil)
-                    print(stringValue)
                 }else{
                     print("string value too short!")
-                    
                 }
                 
             } else if let barcodeDescriptor = barcodeMetadataObject.descriptor {
