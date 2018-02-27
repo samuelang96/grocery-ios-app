@@ -116,11 +116,12 @@
                         <outlet property="previewView" destination="guD-bB-Q2w" id="m5z-tC-RRN"/>
                         <outlet property="sessionPresetsButton" destination="hro-jk-MAk" id="i6d-EX-oQN"/>
                         <outlet property="zoomSlider" destination="6Am-YQ-PDc" id="VpL-Eh-Tpw"/>
+                        <segue destination="YHQ-WQ-5U5" kind="show" identifier="demo" id="kO3-FL-dsY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6K-l6-dJ5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="389"/>
+            <point key="canvasLocation" x="-1168" y="-259"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ieo-7Q-P6C">
@@ -202,7 +203,7 @@
         <!--View2-->
         <scene sceneID="wB4-kt-OoQ">
             <objects>
-                <viewController title="View2" id="YHQ-WQ-5U5" customClass="DemoViewController" customModule="AVCamBarcode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="demo" title="View2" id="YHQ-WQ-5U5" customClass="DemoViewController" customModule="AVCamBarcode" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gZh-I2-hp5"/>
                         <viewControllerLayoutGuide type="bottom" id="4Qp-xm-8th"/>
@@ -219,17 +220,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-Jm-MkD">
-                                <rect key="frame" x="33" y="578" width="347" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="tintColor" red="0.79724621770000004" green="0.22748768329999999" blue="0.15578654410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="SCAN BARCODE"/>
-                                <connections>
-                                    <segue destination="pYE-xa-CpI" kind="show" id="Viq-Lo-aVK"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAV-9e-7dP">
                                 <rect key="frame" x="33" y="209" width="347" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -238,7 +228,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-S7-AT2">
-                                <rect key="frame" x="34" y="133" width="347" height="55"/>
+                                <rect key="frame" x="32" y="134" width="347" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99373614200000004" blue="0.97955672650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -247,6 +237,29 @@
                                 </state>
                                 <connections>
                                     <action selector="getSampleProduct:" destination="YHQ-WQ-5U5" eventType="touchUpInside" id="W1Q-J0-tw2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW9-rQ-f80">
+                                <rect key="frame" x="33" y="134" width="347" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.99373614200000004" blue="0.97955672650000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="GET PRODUCT WITH BARCODE">
+                                    <color key="titleColor" red="0.79724621770000004" green="0.22748768329999999" blue="0.15578654410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="getSampleProduct:" destination="YHQ-WQ-5U5" eventType="touchUpInside" id="uf1-Jr-eCA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-Jm-MkD">
+                                <rect key="frame" x="34" y="39" width="347" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="0.79724621770000004" green="0.22748768329999999" blue="0.15578654410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="SCAN BARCODE"/>
+                                <connections>
+                                    <segue destination="pYE-xa-CpI" kind="show" id="Viq-Lo-aVK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -260,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EuL-pw-WhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="-573.09782608695662"/>
+            <point key="canvasLocation" x="404" y="-591"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="k9J-EK-Xnb">
@@ -303,5 +316,8 @@
             <point key="canvasLocation" x="1150.7246376811595" y="1086.6847826086957"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kO3-FL-dsY"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
